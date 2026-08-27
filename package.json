@@ -6,15 +6,15 @@
   "author": "kartik",
   "type": "commonjs",
   "main": "index.js",
- "scripts": {
-  "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
  "build": "cd frontend && npm install && npm run build",
  "start": "cd backend && npm start",
  "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
  "start:backend": "npm --prefix backend run dev",
  "start:frontend": "npm --prefix frontend start",
- "seed": "npm --prefix backend run seed" 
-  },
+ "seed": "npm --prefix backend run seed"
+    },
   "dependencies": {
     "concurrently": "^10.0.5"
   }
